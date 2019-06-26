@@ -1,0 +1,601 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  background-image: url("/images/home-banner.jpg");
+}
+
+@media screen and (min-width: 750px) {
+  header {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+}
+
+header .logo {
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  header .logo {
+    background-color: transparent;
+    width: 60%;
+    float: left;
+    font-size: 30px;
+    text-align: left;
+    height: 30px;
+  }
+}
+
+header .navbar {
+  width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  header .navbar {
+    overflow: auto;
+    width: 40%;
+  }
+}
+
+.navbar_buttons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 750px) {
+  .navbar_buttons {
+    background-color: transparent;
+    list-style-type: none;
+    overflow: hidden;
+  }
+}
+
+.navbar_buttons li {
+  float: left;
+  font-size: 10px;
+  width: 33.33%;
+}
+
+@media screen and (min-width: 750px) {
+  .navbar_buttons li {
+    float: left;
+    margin: 0px;
+    font-size: 10px;
+    width: 15%;
+  }
+}
+
+.navbar_buttons li a {
+  display: block;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 10px;
+}
+
+@media screen and (min-width: 750px) {
+  .navbar_buttons li a {
+    padding: 0px;
+    font-size: 12px;
+  }
+}
+
+.banner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner .banner_image {
+  width: 50%;
+  float: left;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+
+@media screen and (min-width: 750px) {
+  .banner .banner_image {
+    height: 450px;
+    margin-top: 20px;
+  }
+}
+
+.banner .banner_image img {
+  width: 50%;
+  height: 100%;
+  margin: 0 20%;
+}
+
+@media screen and (min-width: 750px) {
+  .banner .banner_image img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+.banner .banner_image .name {
+  font-size: 15px;
+  margin: 5% 0px;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 750px) {
+  .banner .banner_image .name {
+    font-size: 40px;
+    margin: 2% 0;
+  }
+}
+
+.banner .banner_image .this {
+  font-size: 12px;
+  margin-top: 15%;
+}
+
+@media screen and (min-width: 750px) {
+  .banner .banner_image .this {
+    font-size: 15px;
+    margin-top: 20%;
+  }
+}
+
+.banner .banner_image .des {
+  font-size: 12px;
+  margin: 5% 0px;
+  width: 100%;
+  color: #aaa;
+}
+
+@media screen and (min-width: 750px) {
+  .banner .banner_image .des {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+}
+
+.banner .banner_image #discover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#8490ff), color-stop(#62bdfc), to(#8490ff));
+  background-image: linear-gradient(to right, #8490ff, #62bdfc, #8490ff);
+  width: 60%;
+  height: 10%;
+  margin: 5% 0px;
+  border-radius: 8px;
+  border: none;
+  font-size: 12px;
+  color: #fff;
+}
+
+@media screen and (min-width: 750px) {
+  .banner .banner_image #discover {
+    width: 190px;
+    height: 50px;
+    margin: 30px 0px;
+    font-size: 20px;
+  }
+}
+
+.banner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (min-width: 750px) {
+  .container-1 {
+    padding: 5% 10% 5% 10%;
+  }
+}
+
+.container-1 .container-1_head {
+  margin: 20px 0;
+  padding: 0;
+  height: 30px;
+}
+
+.container-1 .container-1_head .title {
+  text-align: left;
+  font-size: 15px;
+  margin: 1%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 750px) {
+  .container-1 .container-1_head .title {
+    font-size: 30px;
+    margin: 0px;
+  }
+}
+
+.container-1 .container-1_head .info {
+  font-size: 12px;
+  text-align: justify;
+  margin: 1%;
+}
+
+@media screen and (min-width: 750px) {
+  .container-1 .container-1_head .info {
+    font-size: 15px;
+    margin: 10px;
+  }
+}
+
+.container-1 .container-b {
+  margin: 0px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 750px) {
+  .container-1 .container-b {
+    margin: 40px 0;
+    display: block;
+  }
+}
+
+.column-1 {
+  float: left;
+  width: 31%;
+  height: 100px;
+  margin: 5px;
+  background-color: #fff;
+  border: 1px solid #f7f7f7;
+  text-align: left;
+}
+
+@media screen and (min-width: 750px) {
+  .column-1 {
+    float: left;
+    width: 31%;
+    height: 150px;
+    padding: 0;
+    margin: 10px;
+  }
+}
+
+.bold {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.textb {
+  font-size: 15px;
+  color: #aaa;
+}
+
+.container-b:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container-2 {
+  padding: 2% 0;
+  background-color: #eaeefd;
+}
+
+@media screen and (min-width: 750px) {
+  .container-2 {
+    padding: 5% 10%;
+  }
+}
+
+.container-2 .cen {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  .container-2 .cen {
+    font-size: 30px;
+  }
+}
+
+.container-2 .textcenter {
+  padding: 20px;
+  text-align: center;
+  color: #aaa;
+}
+
+@media screen and (min-width: 750px) {
+  .container-2 .textcenter {
+    font-size: 15px;
+  }
+}
+
+.container-2 .container-c {
+  overflow: hidden;
+  width: 100%;
+}
+
+.column-2 {
+  float: left;
+  margin: 5px 10px;
+  padding: 5px;
+  background-color: #fff;
+  text-align: left;
+  border: none;
+  border-radius: 10px;
+  width: 96%;
+}
+
+@media screen and (min-width: 750px) {
+  .column-2 {
+    height: 280px;
+    width: 30%;
+    padding: 20px;
+    padding-top: 50px;
+    margin: 10px;
+    border-radius: 3px;
+  }
+}
+
+.column-2 .boldc {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 750px) {
+  .column-2 .boldc {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+}
+
+.column-2 .textc {
+  font-size: 12px;
+  color: #aaa;
+  text-align: left;
+}
+
+@media screen and (min-width: 750px) {
+  .column-2 .textc {
+    font-size: 15px;
+  }
+}
+
+.column-2 .icco {
+  color: #aaa;
+  font-size: 40px;
+  float: right;
+  margin: 20px;
+}
+
+@media screen and (min-width: 750px) {
+  .column-2 .icco {
+    float: none;
+    margin: 30px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .container-3 {
+    margin: 5% 10%;
+  }
+}
+
+.container-3 .cen {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  .container-3 .cen {
+    font-size: 30px;
+  }
+}
+
+.container-3 .textcenter {
+  padding: 20px;
+  text-align: center;
+  color: #aaa;
+}
+
+@media screen and (min-width: 750px) {
+  .container-3 .textcenter {
+    font-size: 15px;
+  }
+}
+
+.container-3 .nav2 {
+  width: 100%;
+  margin: 5% 17%;
+}
+
+@media screen and (min-width: 750px) {
+  .container-3 .nav2 {
+    margin: 2% 32%;
+  }
+}
+
+.container-3 .nav2 .navigation2 {
+  background-color: transparent;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+.navigation2 {
+  overflow: hidden;
+}
+
+.navigation2 li {
+  display: block;
+  float: left;
+}
+
+.navigation2 li a {
+  color: #8490ff;
+  text-align: center;
+  -webkit-text-decoration: #8490ff;
+          text-decoration: #8490ff;
+  padding: 5px 10px;
+}
+
+.container-d {
+  width: 100%;
+  overflow: hidden;
+}
+
+.container-d .column-3 {
+  width: 31.33%;
+  float: left;
+  margin: 1%;
+  position: relative;
+}
+
+.container-d .column-3 img {
+  width: 100%;
+  height: 100%;
+}
+
+.container-d .column-3 .pictitle {
+  position: absolute;
+  bottom: 20%;
+  left: 3%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.container-d .column-3 .pictext {
+  position: absolute;
+  bottom: 10%;
+  left: 3%;
+  font-size: 15px;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 5px;
+  height: auto;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 750px) {
+  footer {
+    padding: 5% 10%;
+  }
+}
+
+footer .column-4a {
+  width: 100%;
+  float: left;
+}
+
+@media screen and (min-width: 750px) {
+  footer .column-4a {
+    width: 50%;
+    float: left;
+    padding-right: 5%;
+  }
+}
+
+footer .column-4b {
+  width: 48%;
+  float: left;
+}
+
+@media screen and (min-width: 750px) {
+  footer .column-4b {
+    width: 30%;
+  }
+}
+
+footer .column-4c {
+  width: 48%;
+  float: left;
+  padding-left: 15%;
+}
+
+@media screen and (min-width: 750px) {
+  footer .column-4c {
+    width: 20%;
+    padding-left: 0;
+  }
+}
+
+.titlefoot {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  text-align: left;
+}
+
+@media screen and (min-width: 750px) {
+  .titlefoot {
+    font-size: 20px;
+  }
+}
+
+.texte {
+  font-size: 12px;
+  text-align: justify;
+}
+
+@media screen and (min-width: 750px) {
+  .texte {
+    font-size: 15px;
+    text-align: left;
+  }
+}
+
+input[type="email"] {
+  font-size: 12px;
+  width: 80%;
+  height: 30px;
+  float: left;
+}
+
+@media screen and (min-width: 750px) {
+  input[type="email"] {
+    width: 60%;
+  }
+}
+
+.lnr-arrow-right {
+  background-image: -webkit-gradient(linear, left top, right top, from(#8490ff), color-stop(#62bdfc), to(#8490ff));
+  background-image: linear-gradient(to right, #8490ff, #62bdfc, #8490ff);
+  padding: 1px;
+  color: #fff;
+  width: 10%;
+  height: 30px;
+  text-align: center;
+  float: left;
+}
+
+@media screen and (min-width: 750px) {
+  .lnr-arrow-right {
+    width: 10%;
+  }
+}
+
+.fab {
+  color: white;
+  font-size: 20px;
+  width: 20px;
+  padding-right: 40px;
+}
+/*# sourceMappingURL=all.css.map */

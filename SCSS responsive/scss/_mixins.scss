@@ -1,0 +1,15 @@
+@mixin titletext{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@mixin titlefont {
+    font-size : 15px;
+    text-align: center;
+}
+
+@mixin desktop{
+    @media screen and (min-width:750px){
+        @content;
+    }
+}
