@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5ff12efa5d.js"></script>
+
+    <title>Task 1</title>
+</head>
+<body>
+        <script src="app.js"></script>
+        <h1>GADGET SIGN UP FORM</h1>
+        <br>
+        <div class="main">
+        <div class="image"> 
+            <div align="center" class="i1">MANAGE YOUR GADGET ACCOUNT</div>
+            <div align="center" class="i2">Lorem ipsum sit amet, consectetuer adipiscing elit. Aenean commondo ligula eget Lorem ipsum dolor sit amet, consetetuer adipiscing elit. Aenean commodo ligula ege
+            </div><div align="center" class="i3">
+            <img src="image1.png" ></div>
+        </div>
+        
+        <div class="form">
+        <form class="box" action="index.html" method="post" name="myform" onsubmit="return validateEmail()">
+           <div class="sign"><b>SIGN UP HERE</b></div> <br>
+          <div class="input-container"><span><i class="far fa-user"></i>&nbsp;|
+            <input type="text" name="n" placeholder="Name" required> <BR></span></div> 
+                <div class="input-container"><span><i class="fas fa-phone-alt"></i>&nbsp;|
+            <input type="number" name="num" placeholder="Phone" required><br></span></div>
+            <div class="input-container"><i class="far fa-envelope"></i>&nbsp;|
+            <input type="email" name="em" placeholder="Email" required><br>
+            <span id="message"></span>
+            </div>
+            <div class="input-container"><i class="fas fa-lock"></i>&nbsp;|
+            <input type="password" id="pass" name="pass" placeholder="Password" required>
+            <i class="fa fa-eye" id="eye"></i>
+            <span id="message1"></span>
+         <br></div>
+
+         <div class="input-container"><i class="fas fa-lock"></i>&nbsp;|
+            <input type="password" name="confirm-pass" placeholder="Confirm Password" required>
+         <br></div>
+        
+            <div class="sp"><span class="sp1"><input type="checkbox" id="check" name="rem" size="5px"> &nbsp; Remember Me </span><span class="sp2"> 
+                <a href=""> Forgot Password...?</a></span></div>
+       <br>  
+          <div class="sub"><input type="submit" name="sub" value="Sign Up"></div>
+          <br>
+          <div class="last">Don't have an account..? &nbsp; <span><a href=""><b>Login Here</b></a></div>
+        </form>
+   </div>
+        </div>
+
+<script>
+        var pwd=document.getElementById("pass");
+            var eye= document.getElementById("eye");
+
+            eye.addEventListener("click", togglePass);
+
+            function togglePass(){
+                eye.classList.toggle('active');
+                if(pwd.type=="password"){
+                    pwd.type="text";
+                }
+            }
+
+            function checkfunction(){
+                var idnames= ["n","num","em","pass","confirm-pass"];
+                let checkval = 0;
+                var fieldname;
+
+
+    if(document.getElementById("check").checked == true){
+        // console.log('1stifcondition');
+        for (i=0; i<5 ; i++){
+            fieldname = idnames[i];
+
+            if( document.getElementById("myform").elements[i].value != ""){
+                checkval += 1;
+
+            }
+
+        }
+
+
+    if (checkval === 5){
+        document.getElementsByClassName('submit').disabled = false;
+        
+
+    }
+
+    else{
+        document.getElementsByClassName('submit').disabled = true;
+
+    }
+}
+}
+</script>
+        
+    </body>
+    
+</body>
+</html>
