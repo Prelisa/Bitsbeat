@@ -2,8 +2,8 @@ const addform=document.querySelector('.add');
 const list=document.querySelector('.todos');
 
 const generatetemplate=(todo=>{
-
-    const html=`
+    
+    let html=`
         <li class="list-group-item d-flex justify-content-between align-items-center">
               <span>${todo}</span>
               <i class="far fa-edit edit" ></i>
@@ -11,7 +11,9 @@ const generatetemplate=(todo=>{
             </li>
     `;
     list.innerHTML+=html;
-    
+   
+    localStorage.setItem('todos',JSON.stringify(html));
+ 
 
 })
 
@@ -52,3 +54,10 @@ list.addEventListener('click',e=>{
     }
     
 });
+
+
+
+
+let data =  localStorage.getItem('todos');
+data = JSON.parse(data);
+console.log(data);
