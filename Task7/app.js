@@ -13,7 +13,8 @@ const generatetemplate=(todo=>{
     list.innerHTML+=html;
    
     localStorage.setItem('todos',JSON.stringify(html));
- 
+ console.log(html, '<<<<<<<<<<<')
+
 
 })
 
@@ -40,7 +41,7 @@ list.addEventListener('click',e=>{
         const edithtml=(todo=>{
             const newhtml=`
         <li class="list-group-item d-flex justify-content-between align-items-center">
-              <span>${parentElement}</span>
+              <span>${todo}</span>
               <i class="far fa-edit edit" ></i>
               <i class="far fa-trash-alt delete"></i>
             </li>

@@ -1,0 +1,202 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <title>Registration Form</title>
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+
+        </header>
+
+
+
+        <main>
+            <div class="container"><br>
+                <div class="container1">
+                    <img src="/images/black.png" alt="" style="width: 284px; height:auto;margin-top: -10px;
+                    margin-left: -171px; "><br>
+                    <div class="texts">
+                        <div class="aiesec" style="color: black">AIESEC</div><br>
+                        <div class="in" style="color: black">in</div>
+                        <div class="ku" style="color: black">KATHMANDU UNIVERSITY</div>
+                        <div class="is">
+
+                            <span style="font-size: 46px;
+                            margin: 32px 19px 0px -47px;color: black">is</span>
+                            <span style="    font-weight: bolder;
+                            margin-left: 20px;
+                            font-size: 75px;
+                            color: white;">RECRUITING</span>
+
+                        </div>
+                        <div class="quote" style="color: white;
+                        font-size: 24px;
+                        margin-top: 63px;
+                        font-weight: bold;color: yellow;">"We believe in awakening the leader inside you"</div>
+                    </div>
+
+                    
+
+
+
+
+                </div>
+                <div class="container2">
+                    <h1 class="text-center" style="font-size:50px">Registration Form </h1>
+                    <div class="col-lg-8 m-auto d-block">
+                        <form action="/another.html" onsubmit="return validation()" method="GET" id="submit" name="submit" >
+                            <div class="form-group">
+                                <label>Username</label>
+                                <input type="text" name="user" class="form-control" id="user">
+                                <span id="username" class="text-danger font-weight-bold"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label>EmailId</label>
+                                <input type="email" name="email" class="form-control" id="email">
+                                <span id="emailid" class="text-danger font-weight-bold"></span>
+                            </div>
+
+                            <div class="form-group">
+                                    <label>Phone Number</label>
+                                    <input type="number" name="numbrt" class="form-control" id="phone">
+                                    <span id="phonenumber" class="text-danger font-weight-bold"></span>
+                            </div>
+
+                            <div class="form-group">
+                                    <label>Password</label>
+                                    <input type="CryptoJS.MD5(password)" name="password" class="form-control" id="password">
+                                    <span id="password" class="text-danger font-weight-bold"></span>
+                            </div>
+
+                            <div class="form-group">
+                                    <label> Confirm Password</label>
+                                    <input type="text" name="password" class="form-control" id="confirm-password">
+                                    <span id="confirmpass" class="text-danger font-weight-bold"></span>
+                            </div>
+                            <input type="button"  id="submit" value="submit" class="btn btn-success">
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
+
+
+        <footer></footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+    <script>
+
+        let array=[];
+        function initialize(){
+            if (localStorage.value){
+                array=JSON.parse(localStorage.value);
+                
+            }
+        }
+
+        function validation(){
+            
+            let user=document.getElementById("user").value;
+            let email=document.getElementById("email").value;
+            let phone=document.getElementById("phone").value;
+            let password=document.getElementById("password").value;
+            let confirmpass=document.getElementById("confirm-password").value;
+
+            let obj={username:user, email:email, phone:phone, password:password, confirmpassword:confirmpass}
+            localStorage.setItem('value', JSON.stringify(obj));
+
+            if (user== ""){
+                document.getElementById("username").innerHTML="Please fill username";
+                return false;
+            }
+            
+            if(user.length <=2 || user.length> 50){
+                document.getElementById("username").innerHTML="See your length of name";
+                return false;
+            }
+
+            if(!isNaN(user)){
+                document.getElementById("username").innerHTML="Number Nahala ok";
+                return false;
+
+            }
+            
+            
+            if (email== ""){
+                document.getElementById("emailid").innerHTML="Please fill Email";
+                return false;
+            }
+            if(email.indexOf('@')<=0){
+                document.getElementById("emailid").innerHTML="Invalid Email @";
+                return false;
+            }
+            if(email.charAt(email.length-4)!=(".") && (email.charAt(email.length-3)!=('.'))){
+                document.getElementById("emailid").innerHTML="Invalid Email .";
+                return false;
+            }
+            
+            if (phone== ""){
+                document.getElementById("phonenumber").innerHTML="Please fill phone";
+                return false;
+            }
+            if(phone.length!=10){
+                document.getElementById("phonenumber").innerHTML="Not correct number";
+                return false;
+            }
+           
+            if (password== ""){
+                document.getElementById("password").innerHTML="Please fill password";
+                
+                return false;
+            }
+            if(password.length <=2 || password.length> 50){
+                document.getElementById("password").innerHTML="Password should be greater than 5 and less than 20";
+                return false;
+            }
+            if(password != confirmpass){
+                document.getElementById("confirmpass").innerHTML="Passwords donot match";
+                return false;
+            }
+            if (confirmpass== ""){
+                document.getElementById("confirmpass").innerHTML="Please fill confirm-password";
+                return false;
+            }
+        }
+
+
+        if(localStorage.getItem('value')){
+            array=JSON.parse(localStorage.value);
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

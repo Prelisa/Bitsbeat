@@ -1,0 +1,48 @@
+body{
+    background: #037ef3;
+}
+
+.wrapper{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    
+}
+main{
+    display:flex;
+   
+
+}
+.container1{
+    float:left;
+    width:50%;
+    
+}
+.aiesec{
+    font-size: 121px;
+    font-weight: bolder;
+    margin: 10px 20px;
+}
+.in{
+    font-size: 70px;
+    margin: -71px 181px 12px;
+}
+.ku{
+    font-size: 43px;
+    font-weight: bolder;
+    margin-left: -26px;
+    margin-top: -21px;
+}
+.is{
+    margin: 0px 20px 10px 38px;
+    
+}
+.container2{
+float:right;
+width: 50%;
+}
+h1{
+    color: black;
+    margin: 40px 0px 40px 43px;
+    font-weight: bold;
+}

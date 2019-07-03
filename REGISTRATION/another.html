@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        
+    <title>Your response</title>
+</head>
+<body>
+        <div class="container2">
+                <h1 class="text-center" style="font-size:50px">Registration Form </h1>
+                <div class="col-lg-8 m-auto d-block">
+                    <form onsubmit="return validation()" method="GET" id="submit" name="submit" >
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" name="user" class="form-control" id="user">
+                            
+                        </div>
+
+                        <div class="form-group">
+                            <label>EmailId</label>
+                            <input type="email" name="email" class="form-control" id="email">
+                            
+                        </div>
+
+                        <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="number" name="numbrt" class="form-control" id="phone">
+                                
+                        </div>
+
+                        <div class="form-group">
+                                <label>Password</label>
+                                <input type="md5" name="password" class="form-control" id="password">
+                               
+                        </div>
+
+
+
+
+
+    <script>
+            let user=document.getElementById("user").value;
+            let email=document.getElementById("email").value;
+            let phone=document.getElementById("phone").value;
+            let password=document.getElementById("password").value;
+            let confirmpass=document.getElementById("confirm-password").value;
+
+    </script>
+</body>
+</html>
