@@ -1,53 +1,91 @@
 <html lang="en">
+
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+
     <title>Your response</title>
 </head>
+
 <body>
-        <div class="container2">
-                <h1 class="text-center" style="font-size:50px">Registration Form </h1>
-                <div class="col-lg-8 m-auto d-block">
-                    <form onsubmit="return validation()" method="GET" id="submit" name="submit" >
-                        <div class="form-group">
-                            <label>Username</label>
-                            <input type="text" name="user" class="form-control" id="user">
-                            
-                        </div>
+    <div class="container2">
+        <h1 class="text-center" style="font-size:50px">LOGIN FORM </h1>
+        <div class="col-lg-8 m-auto d-block">
+            <form onsubmit="return ismatched()" method="GET" id="submit" name="submit">
 
-                        <div class="form-group">
-                            <label>EmailId</label>
-                            <input type="email" name="email" class="form-control" id="email">
-                            
-                        </div>
 
-                        <div class="form-group">
-                                <label>Phone Number</label>
-                                <input type="number" name="numbrt" class="form-control" id="phone">
-                                
-                        </div>
+                <div class="form-group">
+                    <label>EmailId</label>
+                    <input type="email" name="email" class="form-control" id="email">
 
-                        <div class="form-group">
-                                <label>Password</label>
-                                <input type="md5" name="password" class="form-control" id="password">
-                               
-                        </div>
+                </div>
 
 
 
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="password" class="form-control" id="password">
+
+                </div>
+
+                <input id="btn" type="submit"  value="LOGIN">
 
 
-    <script>
-            let user=document.getElementById("user").value;
-            let email=document.getElementById("email").value;
-            let phone=document.getElementById("phone").value;
-            let password=document.getElementById("password").value;
-            let confirmpass=document.getElementById("confirm-password").value;
 
-    </script>
+                <script>
+
+
+                    let array = [];
+                    function initialize() {
+                        if (localStorage.value) {
+                            array = JSON.parse(localStorage.value);
+
+                        }
+                        console.log(encrypt('HY'));
+                        console.log(decrypt('U2FsdGVkX1/S5oc9WgsNyZb8TJHsuL7+p4yArjEpOCYgDTUdkVxkmr+E+NdJmro9'));
+                    }
+                    function encrypt(message = '', key = '') {
+                        var message = CryptoJS.AES.encrypt(message, key);
+                        return message.toString();
+                    }
+
+                    function decrypt(message = '', key = '') {
+                        var code = CryptoJS.AES.decrypt(message, key);
+                        var decryptedMessage = code.toString(CryptoJS.enc.Utf8);
+
+                        return decryptedMessage;
+                    }
+
+                    function ismatched() {
+
+                        let email = document.getElementById("email");
+                        let password = document.getElementById("password");
+
+                        var length = localStorage.length;
+                        let data1;
+
+                        for (var i = 0; i<length ;i++){
+                            let data = localStorage.getItem('data' +i);
+                            data1 = JSON.parse(data);
+                            console.log(data)
+
+                            if(data1.email==email.value && decrypt(data1.password,'prelisa') == password.value){
+                                window.open("welcome.html");
+                            }
+
+                        }
+
+                    }
+
+
+
+
+                </script>
 </body>
+
 </html>

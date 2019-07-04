@@ -46,3 +46,8 @@ h1{
     margin: 40px 0px 40px 43px;
     font-weight: bold;
 }
+.button{
+    border-radius: 5px;
+    margin-left: 1000px;
+    height: 78px;
+    width: 154px;}
