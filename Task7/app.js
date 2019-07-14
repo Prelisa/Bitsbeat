@@ -13,8 +13,7 @@ const generatetemplate=(todo=>{
     list.innerHTML+=html;
    
     localStorage.setItem('todos',JSON.stringify(html));
- console.log(html, '<<<<<<<<<<<')
-
+ 
 
 })
 
