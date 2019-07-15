@@ -1,0 +1,54 @@
+const addform=document.querySelector('.add');
+const list=document.querySelector('.todos');
+
+const generatetemplate=(todo=>{
+
+    const html=`
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+              <span>${todo}</span>
+              <i class="far fa-edit edit" ></i>
+              <i class="far fa-trash-alt delete"></i>
+            </li>
+    `;
+    list.innerHTML+=html;
+    
+
+})
+
+
+addform.addEventListener('submit',e=>{
+    e.preventDefault();
+    const todo=addform.add.value.trim();
+
+    if(todo.length){
+        generatetemplate(todo);
+        addform.reset();
+    }
+    
+});
+//delete
+list.addEventListener('click',e=>{
+   if(e.target.classList.contains('delete')){
+       e.target.parentElement.remove();
+   }
+});
+//edit
+list.addEventListener('click',e=>{
+    if(e.target.classList.contains('edit')){
+        const edithtml=(todo=>{
+            const newhtml=`
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+              <span>${parentElement}</span>
+              <i class="far fa-edit edit" ></i>
+              <i class="far fa-trash-alt delete"></i>
+            </li>
+    `;
+    list.innerHTML=newhtml;
+    
+
+})
+
+        
+    }
+    
+});
