@@ -1,0 +1,326 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
+
+}
+body{
+    overflow-x:hidden;
+}
+.home-logo{
+    float:left;
+    margin:10px;
+    
+}
+.home{
+    width: 111%;
+    background-image: url(/images/home-banner.jpg);
+    height: 500px;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.smalltexts{
+    font-size: small;
+    color: grey;
+}
+.div2{
+    padding: 0px;
+    margin-top: 66px;
+    margin-left: -161px
+}
+.container-2{
+    float:left;
+    margin:127px;
+    margin-top: -18px;
+    clear: both;
+    margin-left: 11%;
+    margin-right: 200px;
+    padding: 8px 13px 5px;
+}
+.container-2 .boldtext{
+    
+    color:black;
+    padding-top:10px;
+    margin:30px;
+
+}
+.container-2 .smalltexts{
+padding-top:40px;
+padding-bottom: 40px;
+margin:20px;
+margin-left: 20px;
+margin-top: -6px;
+
+}
+
+.container-2 .row{
+    width:126%
+}
+.text1 .smalltexts{
+    margin:10px;
+    margin-right: 255px;
+
+}
+
+.lists{
+    
+    margin:10px;
+    text-decoration: none;
+    padding: 10px;
+    width:100%;
+    
+}
+.lists a{
+    margin:10px;
+    text-decoration:none;
+    padding:20px;
+    margin:10px;
+    
+}
+.container-2 .fa{
+    margin-bottom:10%;
+}
+.container-2 .row .firstdiv .smalltexts,
+.container-2 .row .seconddiv .smalltexts,
+.container-2 .row .thirddiv .smalltexts{
+    margin-left:0%;
+    margin-top:-11%;
+}
+.container-3{
+    clear:both;
+    margin:163px;
+    margin-left:11%;
+    margin-bottom:-5%;
+    text-align: center;
+    background-color:#F4FDFB;
+    height: 550px;
+    padding-left:12%;
+}
+.bigtext{
+    font-weight:500;}
+.container-3 .container-3-wrap{
+    margin-left:20px;
+    margin-left:20px;
+    margin-bottom:5px;
+    width:126%
+    background-color:#F4FDFB;
+}
+.container-3 .container-3-wrap .row .image{
+    margin-top: -7%;
+    margin-bottom: 8%;
+    height: 28%;
+}
+.socials{
+    padding:10px;
+    margin: 3% 3% 3% -4%;
+}
+.socials a{
+    padding:3%;
+}
+.container-3 .container-3-top{
+    margin-bottom:3%;
+    margin-left:-15%;}
+.boldtext{
+    font-size: 20px;
+    font-weight: 800;
+}
+.container-3 .container-3-wrap .row .boldtext{
+    margin-left:-7%;
+}
+.container-3 .boldtext{
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: -24px;
+    margin-bottom: 5%;
+    padding-top: 20px;
+}
+.container-3 .row{
+    margin-left:0px;
+}
+.row{
+    margin:5px;
+}
+.container-4 .row .col-4{
+    width:25%;
+    height: 60%;
+
+}
+.topbar{
+    margin:10px;
+}
+.banner{
+    font-size: 15px; 
+    padding:10px;
+    font-weight: 700;
+}
+.bannername{
+    font-size: 20px;
+    padding:10px;
+    font-weight:700;
+}
+
+.button1{
+    padding:10px;
+    size: 20px;
+    border-radius: 5px;
+}
+
+
+
+
+
+.container-1-div{
+    float:left;
+    margin: -9px;
+    padding: 1px;
+    
+}
+.col-6{
+    float:left;
+    width: 50%
+}
+.col-6 > img{
+    padding:10px;
+}
+.div1{
+    align-content: center;
+    width: 50%;
+    padding: 3px;
+    margin-left: 148px}
+
+.container-4{
+    width: 100%;
+    clear: both;
+    float: left;
+    margin:10%;
+    margin-left:3%;
+    
+}
+.container-4 .row-wrap{
+    margin:auto;
+    margin-left:20%;
+}
+.container-4 .row .one{
+    background-image: url(/images/projects-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.container-4 .row .two{
+    background-image: url(/images/projects-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.container-4 .row .three{
+    background-image: url(/images/projects-3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.container-4 .row .four{
+    background-image: url(/images/projects-4.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.container-4 .row .five{
+background-image: url(/images/projects-5.jpg);
+background-size: contain;
+background-repeat: no-repeat;
+}
+.container-4 .row-wrap .row .six{
+    background-image: url(/images/projects-6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:50%;
+}
+.container-4 .wrap{
+    margin-left: 33%;
+    margin-top: -7%;
+    margin-bottom: 65px;
+}
+.container-4 .boldtext{
+    margin-bottom:10px;
+    padding:10px;
+}
+.container-4 .smalltexts{
+    padding-bottom:20px;
+
+}
+.container-4 .divsection3 .text a{
+    padding: 10px;
+    text-decoration: none;
+    margin-top:10px;
+    padding-top:20px;
+
+}
+
+
+
+
+
+
+.row{
+    margin: 0px;
+    width:100%;
+    text-align: center;
+}
+
+
+.container-5{
+    clear: both;
+    float: left;
+    background-color: black;
+}
+.container-4 .col-4{
+    border:none;
+}
+
+.last , .last+.row{
+    background-color: black;
+    
+}
+.footer .boldtext{
+    color:white;
+    padding-bottom: 3%;
+}
+.container-5 .col-4{
+    width:25%;
+    position:relative;
+    float:left;
+    
+}
+
+.col-4{
+    width:25%;
+    position: relative;
+    float: left;
+    height: 180px;
+    padding: 25px;
+    margin:10px;
+    text-align:left;
+    border:1px solid #aeb8b3;
+    border-radius: 5px;
+}
+.about{
+    margin:0px 0px;
+}
+.col-5{
+    width:41.667%;
+    position: relative;
+    height:180px;
+    text-align:left;
+    padding:25px;
+    float:left;
+    margin-left:14%;
+    padding-right:11%;
+}
+.container-5 .footer .smalltexts{
+    margin-bottom: 5%;
+}
+
+.col-3{
+    width:20.33%;
+    float: left;
+    position: relative;
+    text-align:left;
+    padding:25px;
+
+}
